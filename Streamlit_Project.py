@@ -43,7 +43,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('England Premier League', 'England Championship', ))
+    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera División', 'Brazil Serie A',))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
@@ -424,9 +424,9 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['Brazil Serie A']
+complete = ['Argentina Primera División', 'Brazil Serie A']
 incomplete = ['England Premier League', 'England Championship']
-summer = ['Brazil Serie A']
+summer = ['Argentina Primera División', 'Brazil Serie A']
 winter = ['England Premier League', 'England Championship']
 if league in summer:
 	ssn_ = ' 2022'
