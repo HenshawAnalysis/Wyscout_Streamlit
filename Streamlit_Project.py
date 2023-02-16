@@ -425,6 +425,24 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 
+complete = ['Brazil Serie A']
+incomplete = ['England Premier League', 'England Championship']
+summer = ['Brazil Serie A']
+winter = ['England Premier League', 'England Championship']
+	if league in summer:
+        ssn_ = '2022'
+        if league in incomplete:
+            xtratext = ' | Data as of 1/29/23'
+        elif league in complete:
+            xtratext = ' | Data final for 2022'
+    elif league in winter:
+        ssn_ = '2022-23'
+        if league in incomplete:
+            xtratext = ' | Data as of 1/29/23'
+        elif league in complete:
+            xtratext = ' | Data final for 2022'
+
+
 #############################################################################
 pizzadf = dfPlayers
 
@@ -522,7 +540,7 @@ fig.text(
 # add subtitle
 fig.text(
     0.515, 0.956,
-    "Percentile Rank vs %ss - "%(template) + league + " ",
+    "Percentile Rank vs %ss - "%(template) + league + ssn_,
     size=14,
     ha="center", color="#000000"
 )
