@@ -361,7 +361,9 @@ if template == 'Striker':
                                 "Touches in box per 90": "Attacking box\ntouches",
                                 "xA per 100 passes": "xA per 100\npasses",                                  
                                 "Key passes per 90": "Key passes",
-                                "Deep completions per 90": "Deep completions"
+                                "Deep completions per 90": "Deep completions",
+                                "Dribbles per 90": "Dribbles Attempted",
+                                "Successful dribbles, %": "Dribble success %"
                                  }, inplace=True)     
 #############################################################################
 #Striker Template        
@@ -398,7 +400,9 @@ if template == 'Striker & Wide Forward':
                                 "Touches in box per 90": "Attacking box\ntouches",
                                 "xA per 100 passes": "xA per 100\npasses",                                  
                                 "Key passes per 90": "Key passes",
-                                "Deep completions per 90": "Deep completions"
+                                "Deep completions per 90": "Deep completions",
+                                "Dribbles per 90": "Dribbles Attempted",
+                                "Successful dribbles, %": "Dribble success %"
                                  }, inplace=True)     
     
 #############################################################################
