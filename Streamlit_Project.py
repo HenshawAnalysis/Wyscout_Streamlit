@@ -429,18 +429,18 @@ complete = ['Brazil Serie A']
 incomplete = ['England Premier League', 'England Championship']
 summer = ['Brazil Serie A']
 winter = ['England Premier League', 'England Championship']
-	if league in summer:
-        ssn_ = '2022'
-        if league in incomplete:
-            xtratext = ' | Data as of 1/29/23'
-        elif league in complete:
-            xtratext = ' | Data final for 2022'
-    elif league in winter:
-        ssn_ = '2022-23'
-        if league in incomplete:
-            xtratext = ' | Data as of 1/29/23'
-        elif league in complete:
-            xtratext = ' | Data final for 2022'
+if league in summer:
+	ssn_ = '2022'
+    if league in incomplete:
+        xtratext = ' | Data as of 1/29/23'
+    elif league in complete:
+        xtratext = ' | Data final for 2022'
+elif league in winter:
+    ssn_ = '2022-23'
+    if league in incomplete:
+        xtratext = ' | Data as of 1/29/23'
+    elif league in complete:
+        xtratext = ' | Data final for 2022'
 
 
 #############################################################################
