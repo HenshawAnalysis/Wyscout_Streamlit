@@ -43,7 +43,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 with st.sidebar:
     st.header('Filters')
     league = st.selectbox('League', ('England Premier League', 'England Championship', ))
-    pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Forwards (ST & Wide FWD)'))
+    pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
     maxage = st.slider('Max Age', 15, max(df.Age.astype(int)), 40)
@@ -157,7 +157,7 @@ if pos == 'Attacking Midfielder & Winger':
 if pos == 'Striker':
     dfPlayers = dfPlayers[(dfPlayers['Main Position'].str.contains('CF'))]
 
-if pos == 'Forwards (ST & Wide FWD)':
+if pos == 'Forwards (Sriker & Wide Forward)':
     dfPlayers = dfPlayers[(dfPlayers['Main Position'].str.contains('CF')) |
                             (dfPlayers['Main Position'].str.contains('RW')) |
                             (dfPlayers['Main Position'].str.contains('LW'))]
@@ -364,7 +364,7 @@ if template == 'Striker':
                                  }, inplace=True)     
 #############################################################################
 #Striker Template        
-if template == 'Forwards (ST & Wide FWD)':
+if template == 'Striker & Wide Forward':
         dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
                                "Non-penalty goals per 90","NPxG per 90","Shots per 90",
                                'xG/Shot',"Goal conversion, %","Touches in box per 90", 
@@ -472,7 +472,7 @@ if template == 'Striker':
     slice_colors = ["#660000"] * 6 + ["#014F8A"] * 5 + ["#5A5A5A"] * 4
     text_colors = ["white"] * 15
     
-if template == 'Forwards (ST & Wide FWD)':
+if template == 'Striker & Wide Forward':
     slice_colors = ["#660000"] * 6 + ["#014F8A"] * 5 + ["#5A5A5A"] * 4
     text_colors = ["white"] * 15  
 
