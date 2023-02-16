@@ -362,7 +362,7 @@ if template == 'Striker':
                                 "xA per 100 passes": "xA per 100\npasses",                                  
                                 "Key passes per 90": "Key passes",
                                 "Deep completions per 90": "Deep completions",
-                                "Dribbles per 90": "Dribbles Attempted",
+                                "Dribbles per 90": "Dribbles attempted",
                                 "Successful dribbles, %": "Dribble success %"
                                  }, inplace=True)     
 #############################################################################
@@ -401,7 +401,7 @@ if template == 'Striker & Wide Forward':
                                 "xA per 100 passes": "xA per 100\npasses",                                  
                                 "Key passes per 90": "Key passes",
                                 "Deep completions per 90": "Deep completions",
-                                "Dribbles per 90": "Dribbles Attempted",
+                                "Dribbles per 90": "Dribbles attempted",
                                 "Successful dribbles, %": "Dribble success %"
                                  }, inplace=True)     
     
