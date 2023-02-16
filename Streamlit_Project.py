@@ -417,6 +417,7 @@ with dataset:
 
 
 st.header("Enter the player's name, team and age to create the visual")
+st.text("Feel free to type the information, or copy and paste it from the table above")
 player = st.text_input("Player's Name", "")
 team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
