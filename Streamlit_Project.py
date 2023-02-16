@@ -158,7 +158,7 @@ if pos == 'Attacking Midfielder & Winger':
 if pos == 'Striker':
     dfPlayers = dfPlayers[(dfPlayers['Main Position'].str.contains('CF'))]
 
-if pos == 'Forwards (Sriker & Wide Forward)':
+if pos == 'Striker & Wide Forward':
     dfPlayers = dfPlayers[(dfPlayers['Main Position'].str.contains('CF')) |
                             (dfPlayers['Main Position'].str.contains('RW')) |
                             (dfPlayers['Main Position'].str.contains('LW'))]
