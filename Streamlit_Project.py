@@ -43,7 +43,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera División', 'Brazil Serie A',))
+    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera División', 'Brazil Serie A','Finland Veikkausliiga', 'Georgia Erovnuli Liga',))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
@@ -424,9 +424,9 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['Argentina Primera División', 'Brazil Serie A']
+complete = ['Argentina Primera División', 'Brazil Serie A', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga']
 incomplete = ['England Premier League', 'England Championship']
-summer = ['Argentina Primera División', 'Brazil Serie A']
+summer = ['Argentina Primera División', 'Brazil Serie A', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga']
 winter = ['England Premier League', 'England Championship']
 if league in summer:
 	ssn_ = ' 2022'
@@ -592,5 +592,9 @@ st.pyplot(fig)
 with st.expander('Latest Data Updates'):
     st.write('''
     England Premier League - Updated 16/02/2023\n
-    England Championship - Updated 16/02/2023
+    England Championship - Updated 16/02/2023\n
+	Argentina Primera División - 2022 Completed Season\n
+	Brazil Serie A - 2022 Completed Season\n
+    Finland Veikkausliiga - 2022 Completed Season\n
+    Georgia Erovnuli Liga - 2022 Completed Season
     ''')
