@@ -472,7 +472,7 @@ if template == 'Striker':
     slice_colors = ["#660000"] * 6 + ["#014F8A"] * 5 + ["#5A5A5A"] * 4
     text_colors = ["white"] * 15
     
-if template == 'Forward':
+if template == 'Forwards (ST & Wide FWDs)':
     slice_colors = ["#660000"] * 6 + ["#014F8A"] * 5 + ["#5A5A5A"] * 4
     text_colors = ["white"] * 15  
 
