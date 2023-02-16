@@ -11,6 +11,8 @@ import imageio
 from mplsoccer import PyPizza, add_image, FontManager
 import math
 from datetime import datetime
+import warnings
+warnings.filterwarnings('ignore')
 
 header = st.container()
 
