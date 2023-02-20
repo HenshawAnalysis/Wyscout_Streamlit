@@ -413,7 +413,7 @@ if template == 'Striker & Wide Forward':
     
 #############################################################################
 #Preview Table
-final = dftable[['Player','Team within selected timeframe','Age','League','Main Position','Birth country', 'Contract expires',]]
+final = dftable[['Player','Team within selected timeframe','Age','League','Main Position','Minutes played','Birth country', 'Contract expires',]]
 
 final = final.loc[(final['League']==league)]
 
