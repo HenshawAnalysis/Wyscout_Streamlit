@@ -513,7 +513,7 @@ baker = PyPizza(
 # plot pizza
 fig, ax = baker.make_pizza(
     values,                          # list of values
-    figsize=(10, 10),                # adjust figsize according to your need
+    figsize=(9, 11),                # adjust figsize according to your need
     color_blank_space="same",        # use same color to fill blank space
     slice_colors=slice_colors,       # color for individual slices
     value_colors=text_colors,        # color for the value-text

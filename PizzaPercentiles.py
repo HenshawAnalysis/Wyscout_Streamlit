@@ -44,11 +44,11 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League','Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Germany 2. Bundesliga', 'Italy Serie B', 'Japan J2-League', 'Korea K-League 2', 'Latvia Virslīga', 'Malaysia Super League','Netherlands Eredivisie', 'Peru Primera División','Portugal Primeira Liga','Scotland Championship', 'Spain Segunda', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División',))
+    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League','Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Germany 2. Bundesliga', 'Italy Serie B', 'Japan J2-League', 'Korea K-League 2', 'Latvia Virslīga', 'Malaysia Super League','Netherlands Eredivisie', 'Peru Primera División','Portugal Primeira Liga','Scotland Championship','Slovenia Prva Liga', 'Spain Segunda', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División',))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
-    maxage = st.slider('Max Age', 15, max(df.Age.astype(int)), 40)
+    maxage = st.slider('Max Age', 15, max(df.Age.astype(int)), 45)
 
  #####################################################################
 
@@ -435,9 +435,9 @@ page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
 complete = ['Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League','Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virslīga','Malaysia Super League', 'Peru Primera División', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División']
-incomplete = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B','Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship', 'Spain Segunda']
+incomplete = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B','Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda']
 summer = ['Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League', 'Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virslīga','Malaysia Super League', 'Peru Primera División', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División']
-winter = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B', 'Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship', 'Spain Segunda']
+winter = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B', 'Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda']
 if league in summer:
 	ssn_ = ' 2022'
 	if league in incomplete:
@@ -1231,6 +1231,7 @@ with st.expander('Latest Data Updates'):
     Peru Primera División - 2022 Completed Season\n
     Portugal Primeira Liga - Updated 20/02/2023\n
     Scotland Championship - Updated 17/02/2023\n
+    Slovenia Prva Liga - Updated 21/02/2023\n
     Spain Segunda - Updated 17/02/2023\n
     Uruguay Primera División - 2022 Completed Season\n
     Uzbekistan Super League - 2022 Completed Season\n
