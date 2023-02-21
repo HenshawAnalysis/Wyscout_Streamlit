@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from soccerplots.radar_chart import Radar
 from highlight_text import ax_text,fig_text
 import mplsoccer
 from mplsoccer import Radar
