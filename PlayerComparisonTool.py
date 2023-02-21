@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
+import soccerplots
 from soccerplots.radar_chart import Radar
 from highlight_text import ax_text,fig_text
 import mplsoccer
-from mplsoccer import Radar
 import matplotlib.pyplot as plt
 from scipy import stats
 import seaborn as sns
