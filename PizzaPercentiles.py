@@ -434,23 +434,14 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League','Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virslīga','Malaysia Super League', 'Peru Primera División', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División']
-incomplete = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B','Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda']
+complete = ['']
 summer = ['Argentina Primera División', 'Brazil Serie A', 'Chile Primera División', 'China Super League', 'Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virslīga','Malaysia Super League', 'Peru Primera División', 'Uruguay Primera División', 'Uzbekistan Super League', 'Venezuela Primera División']
 winter = ['England Premier League', 'England Championship', 'Germany 2. Bundesliga', 'Italy Serie B', 'Netherlands Eredivisie','Portugal Primeira Liga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda']
 if league in summer:
 	ssn_ = ' 2022'
-	if league in incomplete:
-		xtratext = ' | Data as of 1/29/23'
-	elif league in complete:
-		xtratext = ' | Data final for 2022'
+
 elif league in winter:
     ssn_ = ' 2022-23'
-    if league in incomplete:
-        xtratext = ' | Data as of 1/29/23'
-    elif league in complete:
-        xtratext = ' | Data final for 2022'
-
 
 #############################################################################
 pizzadf = dfPlayers
