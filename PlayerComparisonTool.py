@@ -545,8 +545,8 @@ with tabview:
 #Expander to see when the latest leagues were updated last
 with st.expander('Latest Data Updates'):
     st.write('''
-    England Premier League - Updated 16/02/2023\n
-    England Championship - Updated 16/02/2023\n
+    England Premier League - Updated 21/02/2023\n
+    England Championship - Updated 21/02/2023\n
 	Argentina Primera División - 2022 Completed Season\n
 	Brazil Serie A - 2022 Completed Season\n
 	Chile Primera División - 2022 Completed Season\n
@@ -557,19 +557,19 @@ with st.expander('Latest Data Updates'):
 	Estonia Meistriliiga - 2022 Completed Season\n
     Finland Veikkausliiga - 2022 Completed Season\n
     Georgia Erovnuli Liga - 2022 Completed Season\n
-    Germany 2. Bundesliga - Updated 17/02/2023\n
-    Italy Serie B - Updated 17/02/2023\n
+    Germany 2. Bundesliga - Updated 21/02/2023\n
+    Italy Serie B - Updated 21/02/2023\n
     Japan J2-League - 2022 Completed Season\n
     Korea K-League 2 - 2022 Completed Season\n
     Latvia Virslīga - 2022 Completed Season\n
     Malaysia Super League - 2022 Completed Season\n
     Mexico Liga MX - Updated 21/02/2023\n
-    Netherlands Eredivisie - Updated 17/02/2023\n
+    Netherlands Eredivisie - Updated 21/02/2023\n
     Peru Primera División - 2022 Completed Season\n
-    Portugal Primeira Liga - Updated 20/02/2023\n
-    Scotland Championship - Updated 17/02/2023\n
+    Portugal Primeira Liga - Updated 21/02/2023\n
+    Scotland Championship - Updated 21/02/2023\n
     Slovenia Prva Liga - Updated 21/02/2023\n
-    Spain Segunda - Updated 17/02/2023\n
+    Spain Segunda - Updated 21/02/2023\n
     Uruguay Primera División - 2022 Completed Season\n
     Uzbekistan Super League - 2022 Completed Season\n
     Venezuela Primera División - 2022 Completed Season\
