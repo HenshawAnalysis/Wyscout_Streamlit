@@ -538,14 +538,14 @@ fig, ax = baker.make_pizza(
 
 # add title
 fig.text(
-    0.515, 0.975, "%s (%i) \n(%i mins) - %s" %(player, page, minplay, team),
+    0.515, 0.975, "%s (%i) - %s" %(player, page, team),
     size=16, fontweight='bold', ha="center", color="#000000"
 )
 
 # add subtitle
 fig.text(
     0.515, 0.956,
-    "Percentile Rank vs %ss - "%(template) + league + ssn_,
+    "(%i mins)\nPercentile Rank vs %ss - "%(minplay, template) + league + ssn_,
     size=14,
     ha="center", color="#000000"
 )
