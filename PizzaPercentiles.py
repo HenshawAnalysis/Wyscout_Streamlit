@@ -545,7 +545,7 @@ fig.text(
 # add subtitle
 fig.text(
     0.515, 0.956,
-    "(%i mins)\nPercentile Rank vs %ss - "%(minplay, template) + league + ssn_,
+    "%i minutes played\nPercentile Rank vs %ss - "%(minplay, template) + league + ssn_,
     size=14,
     ha="center", color="#000000"
 )
@@ -1179,8 +1179,8 @@ if template == 'Striker & Wide Forward':
     fig_text(0.91,0.29,"DEFENDING", fontweight='bold',size=16, color="black", alpha=0.5, zorder=2, rotation=270.)
 
     
-fig_text(-0.16,0.96,"%s (%i) (%i mins) - %s" %(player, page, minplay, team),  fontweight='bold',size=36)
-fig_text(-0.16,0.91,"%s | %s %s | %s template" %(team, league, ssn_, template), fontweight='bold',size=16)
+fig_text(-0.16,0.96,"%s (%i) - %s" %(player, page, team),  fontweight='bold',size=36)
+fig_text(-0.16,0.91,"%i minutes played\n%s | %s %s | %s template" %(minplay, team, league, ssn_, template), fontweight='bold',size=16)
 fig_text(0.432,0.865,"Average "  + league +  " " + template, fontweight='bold',size=11, fontstyle='italic', color="black", alpha=0.7, zorder=2)
 
 
