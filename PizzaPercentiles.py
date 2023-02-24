@@ -1180,7 +1180,7 @@ if template == 'Forward':
 
     
 fig_text(-0.16,0.96,"%s (%i) - %s" %(player, page, team),  fontweight='bold',size=36)
-fig_text(-0.16,0.91,team + " | " + league + "" + ssn_ +" | " + template +" Template", fontweight='bold',size=16)
+fig_text(-0.16,0.91,"%s | %s %s | %i mins | %s template", %(team, league, ssn_, minplay, template), fontweight='bold',size=16)
 fig_text(0.432,0.865,"Average "  + league +  " " + template, fontweight='bold',size=11, fontstyle='italic', color="black", alpha=0.7, zorder=2)
 
 
