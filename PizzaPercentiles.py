@@ -460,7 +460,7 @@ pizzaplayer = pizzaplayer[5:]
 params = list(pizzadf.columns)
 
 #drop the first list team because we don't need player name. Start at first metric
-params = params[3:]
+params = params[4:]
 
 #Get Percentiles
 values = []
