@@ -538,7 +538,7 @@ fig, ax = baker.make_pizza(
 
 # add title
 fig.text(
-    0.515, 0.975, "%s (%i) - %s" %(player, page, team),
+    0.515, 0.975, "%s (%i) - %s\n" %(player, page, team),
     size=16, fontweight='bold', ha="center", color="#000000"
 )
 
