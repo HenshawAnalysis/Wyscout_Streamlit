@@ -180,7 +180,7 @@ dfPlayers = dfPlayers.reset_index(drop=True)
 #Centre Back Template      
 
 if template == 'Centre Back':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "NPxG per 90","Offensive duels per 90","Offensive duels won, %",
                                'Progressive runs per 90',"Successful progressive passes","Accurate passes, %", 
                                'Accurate forward passes, %', "Forward passes per 90","Successful defensive actions per 90",
@@ -219,7 +219,7 @@ if template == 'Centre Back':
 #Fullback & Wingback Template      
 
 if template == 'Fullback & Wingback':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "Successful crosses","Successful dribbles", "Offensive duels per 90",
                                "Offensive duels won, %","Touches in box per 90",'Progressive runs per 90',
                                "Successful progressive passes","Accurate passes, %", 
@@ -258,7 +258,7 @@ if template == 'Fullback & Wingback':
 #############################################################################
 #Midfielder Template        
 if template == 'Midfielder':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "NPxG per 90","Shots per 90","Progressive runs per 90",
                                "Successful progressive passes","Accurate passes, %", 
                                'Accurate forward passes, %', "Forward passes per 90",'xA per 100 passes',
@@ -297,7 +297,7 @@ if template == 'Midfielder':
 #############################################################################
 #Att Mid & Winger Template        
 if template == 'Attacking Midfielder & Winger':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "Non-penalty goals per 90","NPxG per 90","Shots per 90",
                                'xG/Shot',"Goal conversion, %","Successful crosses","Successful dribbles",
                                "Offensive duels per 90","Offensive duels won, %","xA per 100 passes", 
@@ -335,7 +335,7 @@ if template == 'Attacking Midfielder & Winger':
 #############################################################################
 #Striker Template        
 if template == 'Striker':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "Non-penalty goals per 90","NPxG per 90","Shots per 90",
                                'xG/Shot',"Goal conversion, %","Touches in box per 90", 
                                'Dribbles per 90', "Successful dribbles, %","Offensive duels per 90",
@@ -374,7 +374,7 @@ if template == 'Striker':
 #############################################################################
 #Striker Template        
 if template == 'Striker & Wide Forward':
-        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age',
+        dfPlayers = dfPlayers[["Player",'Team within selected timeframe', 'Age', 'Minutes played',
                                "Non-penalty goals per 90","NPxG per 90","Shots per 90",
                                'xG/Shot',"Goal conversion, %","Touches in box per 90", 
                                'Dribbles per 90', "Successful dribbles, %","Offensive duels per 90",
@@ -448,8 +448,13 @@ pizzadf = dfPlayers
 
 #NEW DATA FRAME FOR YOUR PLAYER / EDIT NAME
 pizzaplayer = pizzadf.loc[dfPlayers['Player']==player].reset_index()
+
+#Get the mins played value for specific player needed for visual
+minplay = int(pizzaplayer['Minutes played'].values[0])
+
+#Getting just the data values for visual
 pizzaplayer = list(pizzaplayer.loc[0])
-pizzaplayer = pizzaplayer[4:]
+pizzaplayer = pizzaplayer[5:]
 
 #get parameters
 params = list(pizzadf.columns)
@@ -533,7 +538,7 @@ fig, ax = baker.make_pizza(
 
 # add title
 fig.text(
-    0.515, 0.975, "%s (%i) - %s" %(player, page, team),
+    0.515, 0.975, "%s (%i) - %s - %i mins played" %(player, page, team, minplay),
     size=16, fontweight='bold', ha="center", color="#000000"
 )
 
