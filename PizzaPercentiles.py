@@ -1180,7 +1180,7 @@ if template == 'Striker & Wide Forward':
 
     
 fig_text(-0.16,0.96,"%s (%i) - %s" %(player, page, team),  fontweight='bold',size=36)
-fig_text(-0.16,0.91,"%i minutes played\n%s | %s %s | %s template" %(minplay, team, league, ssn_, template), fontweight='bold',size=16)
+fig_text(-0.16,0.93,"%i minutes played\n%s | %s %s | %s template" %(minplay, team, league, ssn_, template), fontweight='bold',size=16)
 fig_text(0.432,0.865,"Average "  + league +  " " + template, fontweight='bold',size=11, fontstyle='italic', color="black", alpha=0.7, zorder=2)
 
 
