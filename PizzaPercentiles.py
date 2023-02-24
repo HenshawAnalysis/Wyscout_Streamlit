@@ -538,7 +538,7 @@ fig, ax = baker.make_pizza(
 
 # add title
 fig.text(
-    0.515, 0.975, "%s (%i / %i mins) - %s" %(player, page, minplay, team),
+    0.515, 0.975, "%s (%i ) (%i mins) - %s" %(player, page, minplay, team),
     size=16, fontweight='bold', ha="center", color="#000000"
 )
 
@@ -1075,7 +1075,7 @@ if template == 'Striker':
                                 'Value': [xST1,xST2,xST3,xST4,xST5,xST6,xST7,xST8,xST9,xST10,xST11,xST12,xST13,xST14,xST15,xST16,xST17,xST18,xST19,xST20,xST21,xST22,xST23,xST24]})
 
 #Striker Template        
-if template == 'Forward':
+if template == 'Striker & Wide Forward':
         bar_df = pd.DataFrame ({'Metric': [ST1,ST2,ST3,ST4,ST5,ST6,ST7,ST8,ST9,ST10,ST11,ST12,ST13,ST14,ST15,ST16,ST17,ST18,ST19,ST20,ST21,ST22,ST23,ST24],
                                 'Percentile': [pct1ST,pct2ST,pct3ST,pct4ST,pct5ST,pct6ST,pct7ST,pct8ST,pct9ST,pct10ST,pct11ST,pct12ST,pct13ST,pct14ST,pct15ST,pct16ST,pct17ST,pct18ST,pct19ST,pct20ST,pct21ST,pct22ST,pct23ST,pct24ST],
                                 'Value': [xST1,xST2,xST3,xST4,xST5,xST6,xST7,xST8,xST9,xST10,xST11,xST12,xST13,xST14,xST15,xST16,xST17,xST18,xST19,xST20,xST21,xST22,xST23,xST24]})
@@ -1171,7 +1171,7 @@ if template == 'Striker':
     fig_text(0.91,0.48,"POSSESSION", fontweight='bold',size=16, color="black", alpha=0.5, zorder=2, rotation=270.)
     fig_text(0.91,0.29,"DEFENDING", fontweight='bold',size=16, color="black", alpha=0.5, zorder=2, rotation=270.)
 
-if template == 'Forward':
+if template == 'Striker & Wide Forward':
     plt.axhline(11.532,linestyle='-',c='black',lw=2,zorder=1)
     plt.axhline(17.518,linestyle='-',c='black',lw=2,zorder=1)
     fig_text(0.91,0.73,"ATTACKING", fontweight='bold',size=16, color="black", alpha=0.5, zorder=2, rotation=270.)
@@ -1179,7 +1179,7 @@ if template == 'Forward':
     fig_text(0.91,0.29,"DEFENDING", fontweight='bold',size=16, color="black", alpha=0.5, zorder=2, rotation=270.)
 
     
-fig_text(-0.16,0.96,"%s (%i / %i mins) - %s" %(player, page, minplay, team),  fontweight='bold',size=36)
+fig_text(-0.16,0.96,"%s (%i) (%i mins) - %s" %(player, page, minplay, team),  fontweight='bold',size=36)
 fig_text(-0.16,0.91,"%s | %s %s | %s template" %(team, league, ssn_, template), fontweight='bold',size=16)
 fig_text(0.432,0.865,"Average "  + league +  " " + template, fontweight='bold',size=11, fontstyle='italic', color="black", alpha=0.7, zorder=2)
 
