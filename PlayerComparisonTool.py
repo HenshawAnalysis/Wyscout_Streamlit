@@ -506,11 +506,11 @@ values = [a_values,b_values]
 #title 
 
 title = dict(
-    title_name=player1 + " (%i)" %(page1),
+    title_name=player1 + " (%i)\n" %(page1),
     title_color = '#dc2228',
     subtitle_name = team1 + "\n%s, %s\n%i minutes played" %(league1, ssn_1, minplay1),
     subtitle_color = 'black',
-    title_name_2=player2 + " (%i)" %(page2),
+    title_name_2=player2 + " (%i)\n" %(page2),
     title_color_2 = '#3271ab',
     subtitle_name_2 = team2 + "\n%s, %s\n%i minutes played" %(league2, ssn_2, minplay2),
     subtitle_color_2 = 'black',
