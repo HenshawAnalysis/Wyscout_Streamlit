@@ -1228,7 +1228,7 @@ with st.expander('Latest Data Updates'):
     Greece Super League - Updated 23/02/2023\n
     Hungary NB1 - 23/02/2023\n
     Indonesia Liga 1 - 23/02/2023\n
-    Italy Serie B - Updated 23/02/2023\n
+    Italy Serie B - Updated 01/03/2023\n
     Japan J2-League - 2022 Completed Season\n
     Korea K-League 2 - 2022 Completed Season\n
     Latvia Virsliga - 2022 Completed Season\n
