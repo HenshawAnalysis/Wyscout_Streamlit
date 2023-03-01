@@ -498,8 +498,8 @@ for x in range(len(dfRadar['Player'])):
     if dfRadar['Player'][x] == player2:
         b_values = dfRadar.iloc[x].values.tolist()
         
-a_values = a_values[4:]
-b_values = b_values[4:]
+a_values = a_values[3:]
+b_values = b_values[3:]
 
 values = [a_values,b_values]
 
