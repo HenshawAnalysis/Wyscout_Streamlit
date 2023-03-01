@@ -1213,7 +1213,7 @@ with st.expander('Latest Data Updates'):
     England Championship - Updated 23/02/2023\n
     Argentina Primera Division - 2022 Completed Season\n
     Austria Bundesliga - 23/02/2023\n
-    Belgium First Division B - 23/02/2023\n
+    Belgium First Division B - 01/03/2023\n
     Brazil Serie A - 2022 Completed Season\n
     Chile Primera Division - 2022 Completed Season\n
     China Super League - 2022 Completed Season\n
