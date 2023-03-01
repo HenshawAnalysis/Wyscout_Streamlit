@@ -463,6 +463,13 @@ with selections:
 #Setting df to plot
 dfRadar = dfPlayers[(dfPlayers['Player']==player1) | (dfPlayers['Player']==player2)].reset_index(drop=True)
 
+#Player's individual dataframes to get minutes played for each player
+dfplayerone = dfRadar[(dfRadar['Player']==player1)]
+dfplayertwo = dfRadar[(dfRadar['Player']==player2)]
+#Get the mins played value for specific player needed for visual
+minplay1 = int(dfplayerone['Minutes played'].values[0])
+minplay2 = int(dfplayertwo['Minutes played'].values[0])
+
 #Copy of radar df to display at the end
 comparison = dfRadar
 
@@ -501,11 +508,11 @@ values = [a_values,b_values]
 title = dict(
     title_name=player1 + " (%i)" %(page1),
     title_color = '#dc2228',
-    subtitle_name = team1 + "\n%s, %s" %(league1, ssn_1),
+    subtitle_name = team1 + "\n%s, %s\n%i minutes played" %(league1, ssn_1, minplay1),
     subtitle_color = 'black',
     title_name_2=player2 + " (%i)" %(page2),
     title_color_2 = '#3271ab',
-    subtitle_name_2 = team2 + "\n%s, %s" %(league2, ssn_2),
+    subtitle_name_2 = team2 + "\n%s, %s\n%i minutes played" %(league2, ssn_2, minplay2),
     subtitle_color_2 = 'black',
     title_fontsize = 24,
     subtitle_fontsize=16
