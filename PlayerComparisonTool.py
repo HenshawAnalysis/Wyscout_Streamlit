@@ -470,9 +470,6 @@ dfplayertwo = dfRadar[(dfRadar['Player']==player2)]
 minplay1 = int(dfplayerone['Minutes played'].values[0])
 minplay2 = int(dfplayertwo['Minutes played'].values[0])
 
-#Dropping minutes played column in radar df as it is not needed after getting the player values
-dfRadar = dfRadar.drop('Minutes played', axis=1)
-
 #Copy of radar df to display at the end as a table
 comparison = dfRadar
 
