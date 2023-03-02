@@ -470,11 +470,15 @@ dfplayertwo = dfRadar[(dfRadar['Player']==player2)]
 minplay1 = int(dfplayerone['Minutes played'].values[0])
 minplay2 = int(dfplayertwo['Minutes played'].values[0])
 
+#Dropping minutes played column in radar df as it is not needed after getting the player values
+dfRadar = dfRadar.drop('Minutes played', axis=1)
+
 #Copy of radar df to display at the end as a table
 comparison = dfRadar
 
-#Dropping age from df
+#Dropping age and minutes played from df
 dfPlayers = dfPlayers.drop('Age', axis=1)
+dfPlayers = dfPlayers.drop('Minutes played', axis=1)
 
 #Removing the 
 dfPlayers = dfPlayers.quantile([0.05, 0.95])
