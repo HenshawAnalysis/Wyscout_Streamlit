@@ -470,7 +470,10 @@ dfplayertwo = dfRadar[(dfRadar['Player']==player2)]
 minplay1 = int(dfplayerone['Minutes played'].values[0])
 minplay2 = int(dfplayertwo['Minutes played'].values[0])
 
-#Copy of radar df to display at the end
+#Dropping minutes played column in radar df as it is not needed after getting the player values
+dfRadar = dfRadar.drop('Minutes played', axis=1)
+
+#Copy of radar df to display at the end as a table
 comparison = dfRadar
 
 #Dropping age from df
@@ -498,8 +501,8 @@ for x in range(len(dfRadar['Player'])):
     if dfRadar['Player'][x] == player2:
         b_values = dfRadar.iloc[x].values.tolist()
         
-a_values = a_values[5:]
-b_values = b_values[5:]
+a_values = a_values[3:]
+b_values = b_values[3:]
 
 values = [a_values,b_values]
 
