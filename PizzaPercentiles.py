@@ -1042,7 +1042,7 @@ pct20ST = stats.percentileofscore(dfPercentiles[ST20],xST20)
 pct21ST = stats.percentileofscore(dfPercentiles[ST21],xST21)
 pct22ST = stats.percentileofscore(dfPercentiles[ST22],xST22)
 pct23ST = stats.percentileofscore(dfPercentiles[ST23],xST23)
-pct24ST = stats.percentileofscore(dfPercentiles[ST23],xST23)
+pct24ST = stats.percentileofscore(dfPercentiles[ST24],xST24)
 
 ###############################################################################################
 
