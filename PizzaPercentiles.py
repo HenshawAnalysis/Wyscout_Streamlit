@@ -906,7 +906,7 @@ xST20 = percentilesdf[ST20].values[0]
 xST21 = percentilesdf[ST21].values[0]
 xST22 = percentilesdf[ST22].values[0]
 xST23 = percentilesdf[ST23].values[0]
-xST24 = percentilesdf[ST23].values[0]
+xST24 = percentilesdf[ST24].values[0]
 
 ###############################################################################################
 
