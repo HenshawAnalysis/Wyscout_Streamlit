@@ -1209,41 +1209,41 @@ disp2_col.pyplot(fig)
 #######################################################################################################################
 with st.expander('Latest Data Updates'):
     st.write('''
-    England Premier League - Updated 23/02/2023\n
-    England Championship - Updated 23/02/2023\n
+    England Premier League - Updated 06/03/2023\n
+    England Championship - Updated 06/03/2023\n
     Argentina Primera Division - 2022 Completed Season\n
-    Austria Bundesliga - 23/02/2023\n
-    Belgium First Division B - 01/03/2023\n
+    Austria Bundesliga - Updated 06/03/2023\n
+    Belgium First Division B - Updated 06/03/2023\n
     Brazil Serie A - 2022 Completed Season\n
     Chile Primera Division - 2022 Completed Season\n
     China Super League - 2022 Completed Season\n
     Colombia Primera A - 2022 Completed Season \n
-    Costa Rica Primera Divisioon - Updated 23/02/2023\n
-    Czech Fortuna Liga - Updated 23/02/2023\n
+    Costa Rica Primera Divisioon - Updated 06/03/2023\n
+    Czech Fortuna Liga - Updated 06/03/2023\n
     Ecuador Serie A - 2022 Completed Season \n
     Estonia Meistriliiga - 2022 Completed Season\n
     Finland Veikkausliiga - 2022 Completed Season\n
     Georgia Erovnuli Liga - 2022 Completed Season\n
-    Germany 2. Bundesliga - Updated 23/02/2023\n
-    Greece Super League - Updated 23/02/2023\n
-    Hungary NB1 - 23/02/2023\n
-    Indonesia Liga 1 - 23/02/2023\n
-    Italy Serie B - Updated 01/03/2023\n
+    Germany 2. Bundesliga - Updated 06/03/2023\n
+    Greece Super League - Updated 06/03/2023\n
+    Hungary NB1 - Updated 06/03/2023\n
+    Indonesia Liga 1 - Updated 06/03/2023\n
+    Italy Serie B - Updated 06/03/2023\n
     Japan J2-League - 2022 Completed Season\n
     Korea K-League 2 - 2022 Completed Season\n
     Latvia Virsliga - 2022 Completed Season\n
     Malaysia Super League - 2022 Completed Season\n
-    Mexico Liga MX - Updated 23/02/2023\n
-    Morocco Botola Pro - Updated 23/02/2023\n
-    Netherlands Eredivisie - Updated 23/02/2023\n
-    Netherlands Eerste Divisie - Updated 23/02/2023\n
+    Mexico Liga MX - Updated 06/03/2023\n
+    Morocco Botola Pro - Updated 06/03/2023\n
+    Netherlands Eredivisie - Updated 06/03/2023\n
+    Netherlands Eerste Divisie - Updated 06/03/2023\n
     Peru Primera Division - 2022 Completed Season\n
-    Portugal Primeira Liga - Updated 23/02/2023\n
-    Scotland Championship - Updated 23/02/2023\n
-    Slovenia Prva Liga - Updated 23/02/2023\n
-    Spain Segunda - Updated 23/02/2023\n
-    Turkey Super Lig - Updated 23/02/2023\n
-    Ukraine Premier League - 23/02/2023\n
+    Portugal Primeira Liga - Updated 06/03/2023\n
+    Scotland Championship - Updated 06/03/2023\n
+    Slovenia Prva Liga - Updated 06/03/2023\n
+    Spain Segunda - Updated 06/03/2023\n
+    Turkey Super Lig - Updated 06/03/2023\n
+    Ukraine Premier League - Updated 06/03/2023\n
     Uruguay Primera Division - 2022 Completed Season\n
     Uzbekistan Super League - 2022 Completed Season\n
     Venezuela Primera Divisi0n - 2022 Completed Season\
