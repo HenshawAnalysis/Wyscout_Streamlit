@@ -44,7 +44,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera Division','Austria Bundesliga','Belgium First Division B', 'Brazil Serie A', 'Chile Primera Division', 'China Super League','Colombia Primera A','Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Ecuador Serie A','Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Germany 2. Bundesliga','Germany U19 Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1', 'Italy Serie B', 'Japan J2-League', 'Korea K-League 2', 'Latvia Virsliga','Malaysia Super League','Mexico Liga MX','Morocco Botola Pro','Netherlands Eredivisie','Netherlands Eerste Divisie', 'Peru Primera Division','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga','Scotland Championship','Slovenia Prva Liga', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League', 'Uruguay Primera Division', 'Uzbekistan Super League', 'Venezuela Primera Division',))
+    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera Division 2022','Austria Bundesliga','Belgium First Division B', 'Brazil Serie A 2022', 'Chile Primera Division 2022', 'China Super League 2022','Colombia Primera A 2022','Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Ecuador Serie A 2022','Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022', 'Georgia Erovnuli Liga 2022', 'Germany 2. Bundesliga','Germany U19 Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1', 'Italy Serie B', 'Japan J2-League 2022', 'Korea K-League 2 2022', 'Latvia Virsliga 2022','Malaysia Super League 2022','Mexico Liga MX','Morocco Botola Pro','Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership', 'Peru Primera Division 2022','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga','Scotland Championship','Slovenia Prva Liga', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League', 'Uruguay Primera Division 2022', 'Uzbekistan Super League 2022', 'Venezuela Primera Division 2022',))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
@@ -434,14 +434,17 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['']
+complete = ['Colombia Primera A 2022', 'Ecuador Serie A 2022', 'Peru Primera Division 2022', 'Uruguay Primera Division 2022', 'Venezuela Primera Division 2022', 'Argentina Primera Division 2022', 'Brazil Serie A 2022', 'Chile Primera Division 2022', 'China Super League 2022', 'Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022', 'Georgia Erovnuli Liga 2022', 'Korea K-League 2 2022', 'Latvia Virsliga 2022', 'Malaysia Super League 2022', 'Uzbekistan Super League 2022', 'Japan J2-League 2022']
 summer = ['Argentina Primera Division', 'Brazil Serie A', 'Chile Primera Division', 'China Super League','Colombia Primera A','Ecuador Serie A', 'Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virsliga','Malaysia Super League', 'Peru Primera Division', 'Uruguay Primera Division', 'Uzbekistan Super League', 'Venezuela Primera Division']
-winter = ['England Premier League', 'England Championship','Austria Bundesliga','Belgium First Division B', 'Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga', 'Germany 2. Bundesliga','Germany U19 Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1', 'Italy Serie B','Mexico Liga MX','Morocco Botola Pro', 'Netherlands Eredivisie','Netherlands Eerste Divisie','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League']
+winter = ['England Premier League', 'England Championship','Austria Bundesliga','Belgium First Division B', 'Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga', 'Germany 2. Bundesliga','Germany U19 Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1', 'Italy Serie B','Mexico Liga MX','Morocco Botola Pro', 'Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga', 'Scotland Championship','Slovenia Prva Liga', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League']
 if league in summer:
 	ssn_ = ' 2022'
 
 elif league in winter:
     ssn_ = ' 2022-23'
+
+elif league in complete:
+    ssn_ = ''
 
 #############################################################################
 pizzadf = dfPlayers
@@ -1240,6 +1243,7 @@ with st.expander('Latest Data Updates'):
     Morocco Botola Pro - Updated 06/03/2023\n
     Netherlands Eredivisie - Updated 06/03/2023\n
     Netherlands Eerste Divisie - Updated 06/03/2023\n
+    Northern Ireland Premiership - Updated 30/03/2023\n
     Peru Primera Division - 2022 Completed Season\n
     Portugal Primeira Liga - Updated 06/03/2023\n
     Portugal Segunda Liga - Updated 09/03/2023\n
