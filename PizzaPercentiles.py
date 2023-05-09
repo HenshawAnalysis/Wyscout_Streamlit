@@ -44,7 +44,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera Division 2022','Argentina Primera Division 2023','Albania Superiore League','Austria Bundesliga','Belgium First Division B', 'Brazil Serie A 2022','Bulgaria First League', 'Chile Primera Division 2022', 'China Super League 2022','Colombia Primera A 2022','Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Ecuador Serie A 2022','Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022','Finland Ykkönen 2022', 'Georgia Erovnuli Liga 2022', 'Germany 2. Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1','Italy Campionato Primavera 1', 'Italy Serie B', 'Japan J2-League 2022','Japan J2-League 2023', 'Korea K-League 2 2022', 'Latvia Virsliga 2022','Malaysia Super League 2022','Mexico Liga MX','Morocco Botola Pro','Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership', 'Peru Primera Division 2022','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga','Scotland Championship','Slovenia Prva Liga','South Africa PSL','Spain Primera Division RFEF', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League', 'Uruguay Primera Division 2022', 'Uzbekistan Super League 2022', 'Venezuela Primera Division 2022',))
+    league = st.selectbox('League', ('England Premier League', 'England Championship', 'Argentina Primera Division 2022','Argentina Primera Division 2023','Albania Superiore League','Austria Bundesliga','Belgium First Division B', 'Brazil Serie A 2022','Brazil Serie B 2022','Bulgaria First League', 'Chile Primera Division 2022','Chile Primera Division 2023', 'China Super League 2022','Colombia Primera A 2022','Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Ecuador Serie A 2022','Egypt Premier League','Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022','Finland Ykkönen 2022', 'Georgia Erovnuli Liga 2022', 'Germany 2. Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1','Italy Campionato Primavera 1', 'Italy Serie B', 'Japan J2-League 2022','Japan J2-League 2023', 'Korea K-League 2 2022', 'Latvia Virsliga 2022','Malaysia Super League 2022','Mexico Liga MX','Morocco Botola Pro','Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership', 'Peru Primera Division 2022','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga','Scotland Championship','Slovenia Prva Liga','South Africa PSL','Spain La Liga','Spain Primera Division RFEF', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League', 'Uruguay Primera Division 2022','Uruguay Primera Division 2023', 'Uzbekistan Super League 2022', 'Venezuela Primera Division 2022',))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
@@ -434,9 +434,9 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['Colombia Primera A 2022', 'Ecuador Serie A 2022', 'Peru Primera Division 2022', 'Uruguay Primera Division 2022', 'Venezuela Primera Division 2022', 'Argentina Primera Division 2022','Argentina Primera Division 2023', 'Brazil Serie A 2022', 'Chile Primera Division 2022', 'China Super League 2022', 'Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022','Finland Ykkönen 2022', 'Georgia Erovnuli Liga 2022', 'Korea K-League 2 2022', 'Latvia Virsliga 2022', 'Malaysia Super League 2022', 'Uzbekistan Super League 2022', 'Japan J2-League 2022','Japan J2-League 2023']
+complete = ['Colombia Primera A 2022', 'Ecuador Serie A 2022', 'Peru Primera Division 2022', 'Uruguay Primera Division 2022','Uruguay Primera Division 2023', 'Venezuela Primera Division 2022', 'Argentina Primera Division 2022','Argentina Primera Division 2023', 'Brazil Serie A 2022','Brazil Serie A 2023', 'Chile Primera Division 2022','Chile Primera Division 2023', 'China Super League 2022', 'Estonia Meistriliiga 2022', 'Finland Veikkausliiga 2022','Finland Ykkönen 2022', 'Georgia Erovnuli Liga 2022', 'Korea K-League 2 2022', 'Latvia Virsliga 2022', 'Malaysia Super League 2022', 'Uzbekistan Super League 2022', 'Japan J2-League 2022','Japan J2-League 2023']
 summer = ['Argentina Primera Division', 'Brazil Serie A', 'Chile Primera Division', 'China Super League','Colombia Primera A','Ecuador Serie A', 'Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virsliga','Malaysia Super League', 'Peru Primera Division', 'Uruguay Primera Division', 'Uzbekistan Super League', 'Venezuela Primera Division']
-winter = ['England Premier League', 'England Championship','Albania Superiore League','Austria Bundesliga','Belgium First Division B','Bulgaria First League', 'Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga', 'Germany 2. Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1','Italy Campionato Primavera 1', 'Italy Serie B','Mexico Liga MX','Morocco Botola Pro', 'Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga', 'Scotland Championship','Slovenia Prva Liga','South Africa PSL','Spain Primera Division RFEF', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League']
+winter = ['England Premier League', 'England Championship','Albania Superiore League','Austria Bundesliga','Belgium First Division B','Bulgaria First League', 'Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Egypt Premier League', 'Germany 2. Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1','Italy Campionato Primavera 1', 'Italy Serie B','Mexico Liga MX','Morocco Botola Pro', 'Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga', 'Scotland Championship','Slovenia Prva Liga','South Africa PSL','Spain La Liga','Spain Primera Division RFEF', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League']
 if league in summer:
 	ssn_ = ' 2022'
 
@@ -1213,54 +1213,59 @@ disp2_col.pyplot(fig)
 #######################################################################################################################
 with st.expander('Latest Data Updates'):
     st.write('''
-    England Premier League - Updated 21/04/2023\n
-    England Championship - Updated 21/04/2023\n
+    England Premier League - Updated 09/06/2023\n
+    England Championship 2022/23 -  Completed Season\n
     Argentina Primera Division - 2022 Completed Season\n
-    Argentina Primera Division 2023 - Updated 21/04/2023\n
-    Albania Superiore League - Updated 21/04/2023\n
-    Austria Bundesliga - Updated 21/04/2023\n
-    Belgium First Division B - Updated 21/04/2023\n
+    Argentina Primera Division 2023 - Updated 209/06/2023\n
+    Albania Superiore League - Updated 09/06/2023\n
+    Austria Bundesliga - Updated 09/05/2023\n
+    Belgium First Division B - Updated 09/54/2023\n
     Brazil Serie A - 2022 Completed Season\n
-    Bulgaria First League - Updated 21/04/2023\n
+    Brazil Serie B - 2022 Completed Season\n
+    Bulgaria First League - Updated 09/05/2023\n
     Chile Primera Division - 2022 Completed Season\n
+    Chile Primera Division 2023 -  Updated 09/06/2023\n
     China Super League - 2022 Completed Season\n
     Colombia Primera A - 2022 Completed Season \n
-    Costa Rica Primera Divisioon - Updated 21/04/2023\n
-    Cyprus First Division - Updated 21/04/2023\n
-    Czech Fortuna Liga - Updated 21/04/2023\n
+    Costa Rica Primera Divisioon - Updated 09/05/2023\n
+    Cyprus First Division - Updated 09/05/2023\n
+    Czech Fortuna Liga - Updated 09/05/2023\n
     Ecuador Serie A - 2022 Completed Season \n
+    Egypt Premier League - Updated 09/05/2023\n
     Estonia Meistriliiga - 2022 Completed Season\n
     Finland Veikkausliiga - 2022 Completed Season\n
     Finland Ykkönen - 2022 Completed Season\n
     Georgia Erovnuli Liga - 2022 Completed Season\n
-    Germany 2. Bundesliga - Updated 21/04/2023\n
-    Greece Super League - Updated 21/04/2023\n
-    Hungary NB1 - Updated 21/04/2023\n
-    Indonesia Liga 1 - Updated 21/04/2023\n
-    Italy Campionato Primavera 1 - Updated 21/04/2023\n
-    Italy Serie B - Updated 21/04/2023\n
+    Germany 2. Bundesliga - Updated 09/05/2023\n
+    Greece Super League - Updated 09/05/2023\n
+    Hungary NB1 - Updated 09/05/2023\n
+    Indonesia Liga 1 - Updated 09/05/2023\n
+    Italy Campionato Primavera 1 - Updated 09/05/2023\n
+    Italy Serie B - Updated 09/05/2023\n
     Japan J2-League - 2022 Completed Season\n
-    Japan J2-League 2023 - Updated 21/04/2023\n
+    Japan J2-League 2023 - Updated 09/05/2023\n
     Korea K-League 2 - 2022 Completed Season\n
     Latvia Virsliga - 2022 Completed Season\n
     Malaysia Super League - 2022 Completed Season\n
-    Mexico Liga MX - Updated 21/04/2023\n
-    Morocco Botola Pro - Updated 21/04/2023\n
-    Netherlands Eredivisie - Updated 21/04/2023\n
-    Netherlands Eerste Divisie - Updated 21/04/2023\n
-    Northern Ireland Premiership - Updated 21/04/2023\n
+    Mexico Liga MX - Updated 09/05/2023\n
+    Morocco Botola Pro - Updated 09/05/2023\n
+    Netherlands Eredivisie - Updated 09/05/2023\n
+    Netherlands Eerste Divisie - Updated 09/05/2023\n
+    Northern Ireland Premiership - Updated 09/05/2023\n
     Peru Primera Division - 2022 Completed Season\n
-    Portugal Primeira Liga - Updated 21/04/2023\n
-    Portugal Segunda Liga - Updated 21/04/2023\n
-    Romania SuperLiga - Updated 21/04/2023\n
-    Scotland Championship - Updated 21/04/2023\n
-    Slovenia Prva Liga - Updated 21/04/2023\n
-    South Africa PSL - Updated 25/04/2023\n
-    Spain Primera División RFEF - Updated 21/04/2023\n
-    Spain Segunda - Updated 21/04/2023\n
-    Turkey Super Lig - Updated 21/04/2023\n
-    Ukraine Premier League - Updated 21/04/2023\n
+    Portugal Primeira Liga - Updated 09/05/2023\n
+    Portugal Segunda Liga - Updated 09/05/2023\n
+    Romania SuperLiga - Updated 09/05/2023\n
+    Scotland Championship - Updated 09/05/2023\n
+    Slovenia Prva Liga - Updated 09/05/2023\n
+    South Africa PSL - Updated 09/05/2023\n
+    Spain La Liga - Updated 09/05/2023\n
+    Spain Primera División RFEF - Updated 09/05/2023\n
+    Spain Segunda - Updated 09/05/2023\n
+    Turkey Super Lig - Updated 09/05/2023\n
+    Ukraine Premier League - Updated 09/05/2023\n
     Uruguay Primera Division - 2022 Completed Season\n
+    Uruguay Primera Division 2023 -  Updated 09/05/2023\n
     Uzbekistan Super League - 2022 Completed Season\n
     Venezuela Primera Divisi0n - 2022 Completed Season\n
     ''')
