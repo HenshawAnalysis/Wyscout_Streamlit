@@ -438,7 +438,7 @@ complete = ['Colombia Primera A 2022','Colombia Primera A 2023', 'Ecuador Serie 
 summer = ['Argentina Primera Division', 'Brazil Serie A', 'Chile Primera Division', 'China Super League','Colombia Primera A','Ecuador Serie A', 'Estonia Meistriliiga', 'Finland Veikkausliiga', 'Georgia Erovnuli Liga', 'Japan J2-League', 'Korea K-League 2','Latvia Virsliga','Malaysia Super League', 'Peru Primera Division', 'Uruguay Primera Division', 'Uzbekistan Super League', 'Venezuela Primera Division']
 winter = ['England Premier League', 'England Championship','England National League North South','Albania Superiore League','Austria Bundesliga','Belgium First Division B','Bulgaria First League', 'Costa Rica Primera Division','Cyprus First Division','Czech Fortuna Liga','Egypt Premier League', 'Germany 2. Bundesliga','Greece Super League','Hungary NB1','Indonesia Liga 1','Italy Campionato Primavera 1', 'Italy Serie B','Mexico Liga MX','Morocco Botola Pro', 'Netherlands Eredivisie','Netherlands Eerste Divisie','Northern Ireland Premiership','Portugal Primeira Liga','Portugal Segunda Liga','Romania SuperLiga', 'Scotland Championship','Slovenia Prva Liga','South Africa PSL','Spain La Liga','Spain Primera Division RFEF', 'Spain Segunda','Turkey Super Lig','Ukraine Premier League']
 if league in summer:
-	ssn_ = ' 2023'
+	ssn_ = ' 2022'
 
 elif league in winter:
     ssn_ = ' 2022-23'
