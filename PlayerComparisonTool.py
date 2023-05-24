@@ -12,6 +12,7 @@ import imageio
 from mplsoccer import PyPizza, add_image, FontManager
 import math
 import warnings
+import numpy as np
 warnings.filterwarnings('ignore')
 
 header = st.container()
