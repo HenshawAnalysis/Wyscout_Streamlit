@@ -173,7 +173,7 @@ if pos == 'Striker & Wide Forward':
 
 #############################################################################
 #Adding League Average
-dfPlayers.loc['mean'] = dfPlayers.mean()
+dfPlayers.loc['mean'] = dfPlayers[numeric_columns].mean()
 dfPlayers.Player = dfPlayers.Player.fillna('League Average')
 dfPlayers = dfPlayers.round(decimals = 2)
 
