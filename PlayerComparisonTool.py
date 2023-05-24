@@ -487,7 +487,8 @@ dfPlayers = dfPlayers.drop('Age', axis=1)
 dfPlayers = dfPlayers.drop('Minutes played', axis=1)
 
 #Removing the 
-dfPlayers = dfPlayers.quantile([0.05, 0.95])
+numeric_columns = dfPlayers.select_dtypes(include=np.number).columns
+dfPlayers = dfPlayers[numeric_columns].quantile([0.05, 0.95])
 
 params = list(dfPlayers.columns)
 
