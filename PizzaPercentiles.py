@@ -1213,63 +1213,63 @@ disp2_col.pyplot(fig)
 #######################################################################################################################
 with st.expander('Latest Data Updates'):
     st.write('''
-    England Premier League - Updated 09/06/2023\n
-    England Championship 2022/23 -  Completed Season\n
-    England National League North & South - Completed Season\n
-    Argentina Primera Division - 2022 Completed Season\n
-    Argentina Primera Division 2023 - Updated 209/06/2023\n
-    Albania Superiore League - Updated 09/06/2023\n
-    Austria Bundesliga - Updated 09/05/2023\n
-    Austria Bundesliga 2021/22 - Completed Season\n
-    Belarus Premier League 2022 - Completed Season\n
-    Belgium First Division B - Updated 09/54/2023\n
-    Brazil Serie A - 2022 Completed Season\n
-    Brazil Serie B - 2022 Completed Season\n
-    Bulgaria First League - Updated 09/05/2023\n
-    Chile Primera Division - 2022 Completed Season\n
-    Chile Primera Division 2023 -  Updated 09/06/2023\n
-    China Super League - 2022 Completed Season\n
-    Colombia Primera A - 2022 Completed Season \n
-    Colombia Primera A 2023 - Updated 15/06/2023\n
-    Costa Rica Primera Divisioon - Updated 09/05/2023\n
-    Cyprus First Division - Updated 09/05/2023\n
-    Czech Fortuna Liga - Updated 09/05/2023\n
-    Ecuador Serie A - 2022 Completed Season \n
-    Egypt Premier League - Updated 09/05/2023\n
-    Estonia Meistriliiga - 2022 Completed Season\n
-    Finland Veikkausliiga - 2022 Completed Season\n
-    Finland Ykkönen - 2022 Completed Season\n
-    Georgia Erovnuli Liga - 2022 Completed Season\n
-    Germany 2. Bundesliga - Updated 09/05/2023\n
-    Greece Super League - Updated 09/05/2023\n
-    Hungary NB1 - Updated 09/05/2023\n
-    Indonesia Liga 1 - Updated 09/05/2023\n
-    Italy Campionato Primavera 1 - Updated 09/05/2023\n
-    Italy Serie B - Updated 09/05/2023\n
-    Japan J2-League - 2022 Completed Season\n
-    Japan J2-League 2023 - Updated 09/05/2023\n
-    Korea K-League 2 - 2022 Completed Season\n
-    Latvia Virsliga - 2022 Completed Season\n
-    Malaysia Super League - 2022 Completed Season\n
-    Mexico Liga MX - Updated 09/05/2023\n
-    Morocco Botola Pro - Updated 09/05/2023\n
-    Netherlands Eredivisie - Updated 09/05/2023\n
-    Netherlands Eerste Divisie - Updated 09/05/2023\n
-    Northern Ireland Premiership - Updated 09/05/2023\n
-    Peru Primera Division - 2022 Completed Season\n
-    Portugal Primeira Liga - Updated 09/05/2023\n
-    Portugal Segunda Liga - Updated 09/05/2023\n
-    Romania SuperLiga - Updated 09/05/2023\n
-    Scotland Championship - Updated 09/05/2023\n
-    Slovenia Prva Liga - Updated 09/05/2023\n
-    South Africa PSL - Updated 09/05/2023\n
-    Spain La Liga - Updated 09/05/2023\n
-    Spain Primera División RFEF - Updated 09/05/2023\n
-    Spain Segunda - Updated 09/05/2023\n
-    Turkey Super Lig - Updated 09/05/2023\n
-    Ukraine Premier League - Updated 09/05/2023\n
-    Uruguay Primera Division - 2022 Completed Season\n
-    Uruguay Primera Division 2023 -  Updated 09/05/2023\n
-    Uzbekistan Super League - 2022 Completed Season\n
-    Venezuela Primera Divisi0n - 2022 Completed Season\n
+    England Premier League 2022-23 - Last Updated 25/05/2023\n
+    England Championship 2022-23 - Completed season\n
+    England National League North & South 2022-23 - Completed season\n
+    Argentina Primera Division 2022 - Completed season\n
+    Argentina Primera Division 2023 - Last Updated 25/05/2023\n
+    Albania Superiore League 2022-23 - Last Updated 25/05/2023\n
+    Austria Bundesliga 2022-23 - Last Updated 25/05/2023\n
+    Austria Bundesliga 2021-22 - Completed season\n
+    Belarus Premier League 2022 - Completed season\n
+    Belgium First Division B 2022-23 - Last Updated 25/05/2023\n
+    Brazil Serie A 2022 - Completed season\n
+    Brazil Serie B 2022 - Completed season\n
+    Bulgaria First League 2022-23 - Last Updated 25/05/2023\n
+    Chile Primera Division 2022 - Completed season\n
+    Chile Primera Division 2023 - Last Updated 25/05/2023\n
+    China Super League 2022 - Completed season\n
+    Colombia Primera A 2022 - Completed season\n
+    Colombia Primera A 2023 - Last Updated 25/05/2023\n
+    Costa Rica Primera Divisioon 2022-23 - Last Updated 25/05/2023\n
+    Cyprus First Division 2022-23 - Last Updated 25/05/2023\n
+    Czech Fortuna Liga 2022-23 - Last Updated 25/05/2023\n
+    Ecuador Serie A 2022 - Completed season\n
+    Egypt Premier League 2022-23 - Last Updated 25/05/2023\n
+    Estonia Meistriliiga 2022 - Completed season\n
+    Finland Veikkausliiga 2022 - Completed season\n
+    Finland Ykkönen 2022 - Completed season\n
+    Georgia Erovnuli Liga 2022 - Completed season\n
+    Germany 2. Bundesliga 2022-23 - Last Updated 25/05/2023\n
+    Greece Super League 2022-23 - Last Updated 25/05/2023\n
+    Hungary NB1 2022-23 - Last Updated 25/05/2023\n
+    Indonesia Liga 1 2022-23 - Last Updated 25/05/2023\n
+    Italy Campionato Primavera 1 2022-23 - Last Updated 25/05/2023\n
+    Italy Serie B 2022-23 - Last Updated 25/05/2023\n
+    Japan J2 2023 - Last Updated 25/05/2023\n
+    Japan J2 2022 - Completed season\n
+    Korea K League 2022 - Completed season\n
+    Latvia Virsliga 2022 - Completed season\n
+    Malaysia Super League 2022 - Completed season\n
+    Mexico Liga MX 2022-23 - Last Updated 25/05/2023\n
+    Morocco Botola Pro 2022-23 - Last Updated 25/05/2023\n
+    Netherlands Eredivisie 2022-23 - Last Updated 25/05/2023\n
+    Netherlands Eerste Divisie 2022-23 - Last Updated 25/05/2023\n
+    Northern Ireland Premiership 2022-23 - Last Updated 25/05/2023\n
+    Peru Primera Division 2022 - Completed season\n
+    Portugal Primeira Liga 2022-23 - Last Updated 25/05/2023\n
+    Portugal Segunda Liga 2022-23 - Last Updated 25/05/2023\n
+    Romania SuperLiga 2022-23 - Last Updated 25/05/2023\n
+    Scotland Championship 2022-23 - Completed season\n
+    Slovenia Prva Liga 2022-23 - Last Updated 25/05/2023\n
+    South Africa PSL 2022-23 - Last Updated 25/05/2023\n
+    Spain La Liga 2022-23 - Last Updated 25/05/2023\n
+    Spain Primera División RFEF 2022-23 - Last Updated 25/05/2023\n
+    Spain Segunda 2022-23 - Last Updated 25/05/2023\n
+    Turkey Super Lig 2022-23 - Last Updated 25/05/2023\n
+    Ukraine Premier League 2022-23 - Last Updated 25/05/2023\n
+    Uruguay Primera Division 2022 - Completed season\n
+    Uruguay Primera Division 2023 - Last Updated 25/05/2023\n
+    Uzbekistan Super League 2022 - Completed season\n
+    Venezuela Primera Division 2022 - Completed season\n
     ''')
