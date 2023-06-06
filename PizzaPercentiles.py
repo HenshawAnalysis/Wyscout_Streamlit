@@ -48,7 +48,7 @@ with st.sidebar:
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
-    maxage = st.slider('Max Age', 15, max(df.Age.astype(int)), 45)
+    maxage = st.slider('Max Age', 15, max(df.Age.astype(int)), 56)
 
  #####################################################################
 
