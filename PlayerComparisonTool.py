@@ -40,7 +40,7 @@ background='white'
 
 ##################################################################
 
-df = pd.read_csv('https://raw.githubusercontent.com/HenshawAnalysis/Wyscout_Streamlit/main/Wyscout_League_Export.csv')
+df = pd.read_parquet('https://raw.githubusercontent.com/HenshawAnalysis/Wyscout_Streamlit/main/Wyscout_League_Export_Small.parquet')
 df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).reset_index(drop=True)
 
 with st.sidebar:
