@@ -44,7 +44,7 @@ df = df.dropna(subset=['Position','Team within selected timeframe', 'Age']).rese
 
 with st.sidebar:
     st.header('Filters')
-    league = st.selectbox('League', ('Albania Superiore League 2022-23', 'Argentina Primera Division 2022', 'Argentina Primera Division 2023', 'Australia A-League 2022-23', 'Austria Bundesliga 2022-23', 'Belarus Premier League 2022', 'Belgium First Division A 2022-23', 'Belgium First Division B 2022-23',"Bolivia Primera Division 2023", "Bosnia Premijer Liga 2022-23", 'Brazil Serie A 2022', 'Brazil Serie A 2023', 'Brazil Serie B 2022', 'Brazil Serie B 2023', 'Bulgaria First League 2022-23','Canada Premier League 2023', 'Chile Primera Division 2023', 'China Super League 2023', 'Colombia Primera A 2022', 'Colombia Primera A 2023', 'Costa Rica Primera Division 2022-23', 'Croatia 1.HNL 2022-23', 'Cyprus First Division 2022-23', 'Czech Fortuna Liga 2022-23',"Denmark 1st Division 2022-23","Denmark 1st Division 2023-24", 'Denmark Superliga 2022-23', 'Ecuador Serie A 2022', 'Ecuador Serie A 2023', 'Egypt Premier League 2022-23', 'England Championship 2022-23', 'England League One 2022-23', 'England League Two 2022-23','England National League 2022-23', 'England National League North & South 2022-23', 'England Premier League 2022-23', 'Estonia Meistriliiga 2022', 'Estonia Meistriliiga 2023', 'Finland Veikkausliiga 2022', 'Finland Veikkausliiga 2023', 'Finland Ykkönen 2023', 'France Ligue 1 2022-23', 'France Ligue 2 2022-23', 'Georgia Erovnuli Liga 2022', 'Georgia Erovnuli Liga 2023', 'Germany 2. Bundesliga 2022-23', 'Germany Bundesliga 2022-23', 'Greece Super League 2022-23', 'Hungary NB1 2022-23', 'Indonesia Liga 1 2022-23', 'Ireland Premier Division 2022', "Israel Ligat Ha'Al 2022-23", 'Italy Campionato Primavera 1 2022-23', 'Italy Serie A 2022-23', 'Italy Serie B 2022-23', 'Japan J1-League 2022', 'Japan J2-League 2022', 'Japan J2-League 2023', 'Korea K-League 1 2022', 'Korea K-League 2 2022', 'Korea K-League 2 2023', 'Latvia Virsliga 2022', 'Latvia Virsliga 2023', 'Malaysia Super League 2023', 'Mexico Liga de Expansion 2022-23', 'Mexico Liga MX 2022-23', 'Morocco Botola Pro 2022-23', 'Netherlands Eerste Divisie 2022-23', 'Netherlands Eredivisie 2022-23', 'Northern Ireland Premiership 2022-23', 'Norway Eliteserien 2022',"Norway First Division 2023","Paraguay Primera Division 2023", 'Peru Primera Division 2023','Poland 1 Liga 2022-23', 'Poland Ekstraklasa 2022-23', 'Portugal Primeira Liga 2022-23', 'Portugal Segunda Liga 2022-23',"Qatar Stars League 2022-23", 'Romania SuperLiga 2022-23',"Russia Premier League 2022-23", 'Scotland Championship 2022-23', 'Scotland League One 2022-23', 'Scotland League Two 2022-23','Scotland Premiership 2022-23', 'Serbia Super Liga 2022-23', 'Slovakia Super Liga 2022-23', 'Slovenia Prva Liga 2022-23', 'South Africa PSL 2022-23', 'Spain La Liga 2022-23', 'Spain Primera Division RFEF 2022-23', 'Spain Segunda 2022-23', 'Sweden Allsvenskan 2022', 'Switzerland Super League 2022-23', 'Turkey Super Lig 2022-23', 'Ukraine Premier League 2022-23', 'Uruguay Primera Division 2022', 'Uruguay Primera Division 2023',"USA MLS Next Pro 2022", "USA MLS Next Pro 2023", "USA USL Championship 2023", 'Uzbekistan Super League 2022', 'Uzbekistan Super League 2023', 'Venezuela Primera Division 2022',))
+    league = st.selectbox('League', ("Albania Superiore League 2022-23", "Albania Superiore League 2023-24", "Argentina Primera Division 2022", "Argentina Primera Division 2023", "Australia A-League 2022-23", "Austria Bundesliga 2022-23", "Austria Bundesliga 2023-24", "Belarus Premier League 2022", "Belgium First Division A 2022-23", "Belgium First Division B 2022-23", "Belgium First Division B 2023-24", "Bolivia Primera Division 2023", "Bosnia Premijer Liga 2022-23", "Bosnia Premijer Liga 2023-24", "Brazil Serie A 2022", "Brazil Serie A 2023", "Brazil Serie B 2022", "Brazil Serie B 2023", "Bulgaria First League 2022-23", "Bulgaria First League 2023-24", "Canada Premier League 2023", "Chile Primera Division 2023", "China Super League 2023", "Colombia Primera A 2022", "Colombia Primera A 2023", "Costa Rica Primera Division 2022-23", "Costa Rica Primera Division 2023-24", "Croatia 1.HNL 2022-23", "Cyprus First Division 2022-23", "Cyprus First Division 2023-24", "Czech Fortuna Liga 2022-23", "Czech Fortuna Liga 2023-24", "Denmark 1st Division 2022-23", "Denmark 1st Division 2023-24", "Denmark Superliga 2022-23", "Ecuador Serie A 2022", "Ecuador Serie A 2023", "Egypt Premier League 2022-23", "England Championship 2022-23", "England Championship 2023-24", "England League One 2022-23", "England League Two 2022-23", "England National League 2022-23", "England National League North South 2022-23", "England Premier League 2022-23", "England Premier League 2023-24", "Estonia Meistriliiga 2022", "Estonia Meistriliiga 2023", "Finland Veikkausliiga 2022", "Finland Veikkausliiga 2023", "Finland Ykkönen 2023", "France Ligue 1 2022-23", "France Ligue 1 2023-24", "France Ligue 2 2022-23", "Georgia Erovnuli Liga 2022", "Georgia Erovnuli Liga 2023", "Germany 2. Bundesliga 2022-23", "Germany 2. Bundesliga 2023-24", "Germany Bundesliga 2022-23", "Germany Bundesliga 2023-24", "Greece Super League 2022-23", "Greece Super League 2023-24", "Hungary NB1 2022-23", "Hungary NB1 2023-24", "Indonesia Liga 1 2022-23", "Indonesia Liga 1 2023-24", "Ireland Premier Division 2022", "Israel Ligat Ha'Al 2022-23", "Italy Campionato Primavera 1 2022-23", "Italy Serie A 2022-23", "Italy Serie A 2023-24", "Italy Serie B 2022-23", "Italy Serie B 2023-24", "Japan J1-League 2022", "Japan J2-League 2022", "Japan J2-League 2023", "Korea K-League 1 2022", "Korea K-League 2 2022", "Korea K-League 2 2023", "Latvia Virsliga 2022", "Latvia Virsliga 2023", "Malaysia Super League 2023", "Mexico Liga MX 2022-23", "Mexico Liga MX 2023-24", "Mexico Liga de Expansion 2022-23", "Mexico Liga de Expansion 2023-24", "Morocco Botola Pro 2022-23", "Netherlands Eerste Divisie 2022-23", "Netherlands Eerste Divisie 2023-24", "Netherlands Eredivisie 2022-23", "Netherlands Eredivisie 2023-24", "Northern Ireland Premiership 2022-23", "Northern Ireland Premiership 2023-24", "Norway Eliteserien 2022", "Norway First Division 2023", "Paraguay Primera Division 2023", "Peru Primera Division 2023", "Poland 1 Liga 2022-23", "Poland 1 Liga 2023-24", "Poland Ekstraklasa 2022-23", "Portugal Primeira Liga 2022-23", "Portugal Primeira Liga 2023-24", "Portugal Segunda Liga 2022-23", "Portugal Segunda Liga 2023-24", "Qatar Stars League 2022-23", "Romania SuperLiga 2022-23", "Romania SuperLiga 2023-24", "Russia Premier League 2022-23", "Russia Premier League 2023-24", "Scotland Championship 2022-23", "Scotland Championship 2023-24", "Scotland League One 2022-23", "Scotland League One 2023-24", "Scotland League Two 2022-23", "Scotland League Two 2023-24", "Scotland Premiership 2022-23", "Serbia Super Liga 2022-23", "Slovakia Super Liga 2022-23", "Slovenia Prva Liga 2022-23", "Slovenia Prva Liga 2023-24", "South Africa PSL 2022-23", "Spain La Liga 2022-23", "Spain La Liga 2023-24", "Spain Primera Division RFEF 2022-23", "Spain Segunda 2022-23", "Spain Segunda 2023-24", "Sweden Allsvenskan 2022", "Switzerland Super League 2022-23", "Turkey Super Lig 2022-23", "Turkey Super Lig 2023-24", "USA MLS Next Pro 2022", "USA MLS Next Pro 2023", "USA USL Championship 2023", "Ukraine Premier League 2022-23", "Ukraine Premier League 2023-24", "Uruguay Primera Division 2022", "Uruguay Primera Division 2023", "Uzbekistan Super League 2022", "Uzbekistan Super League 2023", "Venezuela Primera Division 2022",))
     pos = st.selectbox('Position', ('Centre Back', 'Fullback & Wingback', 'Midfielder', 'Attacking Midfielder & Winger', 'Striker', 'Striker & Wide Forward'))
     template = pos
     mins = st.number_input('Minimum Minutes Played', 300, max(df['Minutes played'].astype(int)), 500)
@@ -434,7 +434,7 @@ team = st.text_input("Player's Team", "")
 page = st.number_input("Player's Age", step=1)
 
 #Season - Competition Data Base
-complete = ['Albania Superiore League 2022-23', 'Argentina Primera Division 2022', 'Argentina Primera Division 2023', 'Australia A-League 2022-23', 'Austria Bundesliga 2022-23', 'Belarus Premier League 2022', 'Belgium First Division A 2022-23', 'Belgium First Division B 2022-23',"Bolivia Primera Division 2023", "Bosnia Premijer Liga 2022-23", 'Brazil Serie A 2022', 'Brazil Serie A 2023', 'Brazil Serie B 2022', 'Brazil Serie B 2023', 'Bulgaria First League 2022-23','Canada Premier League 2023', 'Chile Primera Division 2023', 'China Super League 2023', 'Colombia Primera A 2022', 'Colombia Primera A 2023', 'Costa Rica Primera Division 2022-23', 'Croatia 1.HNL 2022-23', 'Cyprus First Division 2022-23', 'Czech Fortuna Liga 2022-23',"Denmark 1st Division 2022-23", "Denmark 1st Division 2023-24", 'Denmark Superliga 2022-23', 'Ecuador Serie A 2022', 'Ecuador Serie A 2023', 'Egypt Premier League 2022-23', 'England Championship 2022-23', 'England League One 2022-23', 'England League Two 2022-23','England National League 2022-23', 'England National League North & South 2022-23', 'England Premier League 2022-23', 'Estonia Meistriliiga 2022', 'Estonia Meistriliiga 2023', 'Finland Veikkausliiga 2022', 'Finland Veikkausliiga 2023', 'Finland Ykkönen 2023', 'France Ligue 1 2022-23', 'France Ligue 2 2022-23', 'Georgia Erovnuli Liga 2022', 'Georgia Erovnuli Liga 2023', 'Germany 2. Bundesliga 2022-23', 'Germany Bundesliga 2022-23', 'Greece Super League 2022-23', 'Hungary NB1 2022-23', 'Indonesia Liga 1 2022-23', 'Ireland Premier Division 2022', "Israel Ligat Ha'Al 2022-23", 'Italy Campionato Primavera 1 2022-23', 'Italy Serie A 2022-23', 'Italy Serie B 2022-23', 'Japan J1-League 2022', 'Japan J2-League 2022', 'Japan J2-League 2023', 'Korea K-League 1 2022', 'Korea K-League 2 2022', 'Korea K-League 2 2023', 'Latvia Virsliga 2022', 'Latvia Virsliga 2023', 'Malaysia Super League 2023', 'Mexico Liga de Expansion 2022-23', 'Mexico Liga MX 2022-23', 'Morocco Botola Pro 2022-23', 'Netherlands Eerste Divisie 2022-23', 'Netherlands Eredivisie 2022-23', 'Northern Ireland Premiership 2022-23', 'Norway Eliteserien 2022', "Norway First Division 2023","Paraguay Primera Division 2023", 'Peru Primera Division 2023','Poland 1 Liga 2022-23', 'Poland Ekstraklasa 2022-23', 'Portugal Primeira Liga 2022-23', 'Portugal Segunda Liga 2022-23',"Qatar Stars League 2022-23", 'Romania SuperLiga 2022-23',"Russia Premier League 2022-23", 'Scotland Championship 2022-23', 'Scotland League One 2022-23', 'Scotland League Two 2022-23','Scotland Premiership 2022-23', 'Serbia Super Liga 2022-23', 'Slovakia Super Liga 2022-23', 'Slovenia Prva Liga 2022-23', 'South Africa PSL 2022-23', 'Spain La Liga 2022-23', 'Spain Primera Division RFEF 2022-23', 'Spain Segunda 2022-23', 'Sweden Allsvenskan 2022', 'Switzerland Super League 2022-23', 'Turkey Super Lig 2022-23', 'Ukraine Premier League 2022-23', 'Uruguay Primera Division 2022', 'Uruguay Primera Division 2023',"USA MLS Next Pro 2022", "USA MLS Next Pro 2023", "USA USL Championship 2023", 'Uzbekistan Super League 2022', 'Uzbekistan Super League 2023', 'Venezuela Primera Division 2022']
+complete = ["Albania Superiore League 2022-23", "Albania Superiore League 2023-24", "Argentina Primera Division 2022", "Argentina Primera Division 2023", "Australia A-League 2022-23", "Austria Bundesliga 2022-23", "Austria Bundesliga 2023-24", "Belarus Premier League 2022", "Belgium First Division A 2022-23", "Belgium First Division B 2022-23", "Belgium First Division B 2023-24", "Bolivia Primera Division 2023", "Bosnia Premijer Liga 2022-23", "Bosnia Premijer Liga 2023-24", "Brazil Serie A 2022", "Brazil Serie A 2023", "Brazil Serie B 2022", "Brazil Serie B 2023", "Bulgaria First League 2022-23", "Bulgaria First League 2023-24", "Canada Premier League 2023", "Chile Primera Division 2023", "China Super League 2023", "Colombia Primera A 2022", "Colombia Primera A 2023", "Costa Rica Primera Division 2022-23", "Costa Rica Primera Division 2023-24", "Croatia 1.HNL 2022-23", "Cyprus First Division 2022-23", "Cyprus First Division 2023-24", "Czech Fortuna Liga 2022-23", "Czech Fortuna Liga 2023-24", "Denmark 1st Division 2022-23", "Denmark 1st Division 2023-24", "Denmark Superliga 2022-23", "Ecuador Serie A 2022", "Ecuador Serie A 2023", "Egypt Premier League 2022-23", "England Championship 2022-23", "England Championship 2023-24", "England League One 2022-23", "England League Two 2022-23", "England National League 2022-23", "England National League North South 2022-23", "England Premier League 2022-23", "England Premier League 2023-24", "Estonia Meistriliiga 2022", "Estonia Meistriliiga 2023", "Finland Veikkausliiga 2022", "Finland Veikkausliiga 2023", "Finland Ykkönen 2023", "France Ligue 1 2022-23", "France Ligue 1 2023-24", "France Ligue 2 2022-23", "Georgia Erovnuli Liga 2022", "Georgia Erovnuli Liga 2023", "Germany 2. Bundesliga 2022-23", "Germany 2. Bundesliga 2023-24", "Germany Bundesliga 2022-23", "Germany Bundesliga 2023-24", "Greece Super League 2022-23", "Greece Super League 2023-24", "Hungary NB1 2022-23", "Hungary NB1 2023-24", "Indonesia Liga 1 2022-23", "Indonesia Liga 1 2023-24", "Ireland Premier Division 2022", "Israel Ligat Ha'Al 2022-23", "Italy Campionato Primavera 1 2022-23", "Italy Serie A 2022-23", "Italy Serie A 2023-24", "Italy Serie B 2022-23", "Italy Serie B 2023-24", "Japan J1-League 2022", "Japan J2-League 2022", "Japan J2-League 2023", "Korea K-League 1 2022", "Korea K-League 2 2022", "Korea K-League 2 2023", "Latvia Virsliga 2022", "Latvia Virsliga 2023", "Malaysia Super League 2023", "Mexico Liga MX 2022-23", "Mexico Liga MX 2023-24", "Mexico Liga de Expansion 2022-23", "Mexico Liga de Expansion 2023-24", "Morocco Botola Pro 2022-23", "Netherlands Eerste Divisie 2022-23", "Netherlands Eerste Divisie 2023-24", "Netherlands Eredivisie 2022-23", "Netherlands Eredivisie 2023-24", "Northern Ireland Premiership 2022-23", "Northern Ireland Premiership 2023-24", "Norway Eliteserien 2022", "Norway First Division 2023", "Paraguay Primera Division 2023", "Peru Primera Division 2023", "Poland 1 Liga 2022-23", "Poland 1 Liga 2023-24", "Poland Ekstraklasa 2022-23", "Portugal Primeira Liga 2022-23", "Portugal Primeira Liga 2023-24", "Portugal Segunda Liga 2022-23", "Portugal Segunda Liga 2023-24", "Qatar Stars League 2022-23", "Romania SuperLiga 2022-23", "Romania SuperLiga 2023-24", "Russia Premier League 2022-23", "Russia Premier League 2023-24", "Scotland Championship 2022-23", "Scotland Championship 2023-24", "Scotland League One 2022-23", "Scotland League One 2023-24", "Scotland League Two 2022-23", "Scotland League Two 2023-24", "Scotland Premiership 2022-23", "Serbia Super Liga 2022-23", "Slovakia Super Liga 2022-23", "Slovenia Prva Liga 2022-23", "Slovenia Prva Liga 2023-24", "South Africa PSL 2022-23", "Spain La Liga 2022-23", "Spain La Liga 2023-24", "Spain Primera Division RFEF 2022-23", "Spain Segunda 2022-23", "Spain Segunda 2023-24", "Sweden Allsvenskan 2022", "Switzerland Super League 2022-23", "Turkey Super Lig 2022-23", "Turkey Super Lig 2023-24", "USA MLS Next Pro 2022", "USA MLS Next Pro 2023", "USA USL Championship 2023", "Ukraine Premier League 2022-23", "Ukraine Premier League 2023-24", "Uruguay Primera Division 2022", "Uruguay Primera Division 2023", "Uzbekistan Super League 2022", "Uzbekistan Super League 2023", "Venezuela Primera Division 2022"]
 summer = []
 winter = []
 if league in summer:
@@ -1213,106 +1213,151 @@ disp2_col.pyplot(fig)
 #######################################################################################################################
 with st.expander('Latest Data Updates'):
     st.write('''
-        Albania Superiore League 2022-23 - Completed season\n
-        Argentina Primera Division 2022 - Completed season\n
-        Argentina Primera Division 2023 - Last Updated 14/08/2023\n
-        Australia A-League 2022-23 - Completed season\n
-        Austria Bundesliga 2022-23 - Completed season\n
-        Belarus Premier League 2022 - Completed season\n
-        Belgium First Division A 2022-23 - Completed season\n
-        Belgium First Division B 2022-23 - Completed season\n
-        Bolivia Primera Division 2023 - Last Updated 14/08/2023\n
-        Bosnia Premijer Liga 2022-23 - Completed season\n
-        Brazil Serie A 2022 - Completed season\n
-        Brazil Serie A 2023 - Last Updated 14/08/2023\n
-        Brazil Serie B 2022 - Completed season\n
-        Brazil Serie B 2023 - Last Updated 14/08/2023\n
-        Bulgaria First League 2022-23 - Completed season\n
-        Canada Premier League 2023 - Last Updated 14/08/2023\n
-        Chile Primera Division 2023 - Last Updated 14/08/2023\n
-        China Super League 2023 - Last Updated 14/08/2023\n
-        Colombia Primera A 2022 - Completed season\n
-        Colombia Primera A 2023 - Last Updated 14/08/2023\n
-        Costa Rica Primera Division 2022-23 - Completed season\n
-        Croatia 1.HNL 2022-23 - Completed season\n
-        Cyprus First Division 2022-23 - Completed season\n
-        Czech Fortuna Liga 2022-23 - Completed season\n
-        Denmark 1st Division 2022-23 - Completed season\n
-        Denmark 1st Division 2023-24 - Last Updated 19/09/2023\n
-        Denmark Superliga 2022-23 - Completed season\n
-        Ecuador Serie A 2022 - Completed season\n
-        Ecuador Serie A 2023 - Last Updated 14/08/2023\n
-        Egypt Premier League 2022-23 - Completed season\n
-        England Championship 2022-23 - Completed season\n
-        England League One 2022-23 - Completed season\n
-        England League Two 2022-23 - Completed season\n
-        England National League 2022-23 - Completed season\n
-        England National League North & South 2022-23 - Completed season\n
-        England Premier League 2022-23 - Completed season\n
-        Estonia Meistriliiga 2022 - Completed season\n
-        Estonia Meistriliiga 2023 - Last Updated 14/08/2023\n
-        Finland Veikkausliiga 2022 - Completed season\n
-        Finland Veikkausliiga 2023 - Last Updated 14/08/2023\n
-        Finland Ykkönen 2023 - Last Updated 14/08/2023\n
-        France Ligue 1 2022-23 - Completed season\n
-        France Ligue 2 2022-23 - Completed season\n
-        Georgia Erovnuli Liga 2022 - Completed season\n
-        Georgia Erovnuli Liga 2023 - Last Updated 14/08/2023\n
-        Germany 2. Bundesliga 2022-23 - Completed season\n
-        Germany Bundesliga 2022-23 - Completed season\n
-        Greece Super League 2022-23 - Completed season\n
-        Hungary NB1 2022-23 - Completed season\n
-        Indonesia Liga 1 2022-23 - Completed season\n
-        Ireland Premier Division 2022 - Completed season\n
-        Israel Ligat Ha'Al 2022-23 - Completed season\n
-        Italy Campionato Primavera 1 2022-23 - Completed season\n
-        Italy Serie A 2022-23 - Completed season\n
-        Italy Serie B 2022-23 - Completed season\n
-        Japan J1-League 2022 - Completed season\n
-        Japan J2-League 2022 - Completed season\n
-        Japan J2-League 2023 - Last Updated 14/08/2023\n
-        Korea K League 1 2022 - Completed season\n
-        Korea K League 2 2022 - Completed season\n
-        Korea K League 2 2023 - Last Updated 14/08/2023\n
-        Latvia Virsliga 2022 - Completed season\n
-        Latvia Virsliga 2023 - Last Updated 14/08/2023\n
-        Malaysia Super League 2023 - Last Updated 14/08/2023\n
-        Mexico Liga de Expansion 2022-23 - Completed season\n
-        Mexico Liga MX 2022-23 - Completed season\n
-        Morocco Botola Pro 2022-23 - Completed season\n
-        Netherlands Eerste Divisie 2022-23 - Completed season\n
-        Netherlands Eredivisie 2022-23 - Completed season\n
-        Northern Ireland Premiership 2022-23 - Completed season\n
-        Norway Eliteserien 2022 - Completed season\n
-        Norway First Division 2023 - Last Updated 14/08/2023\n
-        Paraguay Primera Division 2023 - Last Updated 14/08/2023\n
-        Peru Primera Division 2023 - Last Updated 14/08/2023\n
-        Poland 1 Liga 2022-23 - Completed season\n
-        Poland Ekstraklasa 2022-23 - Completed season\n
-        Portugal Primeira Liga 2022-23 - Completed season\n
-        Portugal Segunda Liga 2022-23 - Completed season\n
-        Romania SuperLiga 2022-23 - Completed season\n
-        Russia Premier League 2022-23 - Completed season\n
-        Scotland Championship 2022-23 - Completed season\n
-        Scotland League One 2022-23 - Completed season\n
-        Scotland League Two 2022-23 - Completed season\n
-        Serbia Super Liga 2022-23 - Completed season\n
-        Slovakia Super Liga 2022-23 - Completed season\n
-        Slovenia Prva Liga 2022-23 - Completed season\n
-        South Africa PSL 2022-23 - Completed season\n
-        Spain La Liga 2022-23 - Completed season\n
-        Spain Primera División RFEF 2022-23 - Completed season\n
-        Spain Segunda 2022-23 - Completed season\n
-        Sweden Allsvenskan 2022 - Completed season\n
-        Switzerland Super League 2022-23 - Completed season\n
-        Turkey Super Lig 2022-23 - Completed season\n
-        Ukraine Premier League 2022-23 - Completed season\n
-        Uruguay Primera Division 2022 - Completed season\n
-        Uruguay Primera Division 2023 - Last Updated 14/08/2023\n
-        USA MLS Next Pro 2022 - Completed season\n
-        USA MLS Next Pro 2023 - Last Updated 14/08/2023\n
-        USA USL Championship 2023 - Last Updated 14/08/2023\n
-        Uzbekistan Super League 2022 - Completed season\n
-        Uzbekistan Super League 2023 - Last Updated 31/07/2023\n
-        Venezuela Primera Division 2022 - Completed season\n
+		Albania Superiore League 2022-23 - Completed season\n
+		Albania Superiore League 2023-24 - Last Updated 27/09/2023\n
+		Argentina Primera Division 2022 - Completed season\n
+		Argentina Primera Division 2023 - Last Updated 25/09/2023\n
+		Australia A-League 2022-23 - Completed season\n
+		Austria Bundesliga 2022-23 - Completed season\n
+		Austria Bundesliga 2023-24 - Last Updated 27/09/2023\n
+		Belarus Premier League 2022 - Completed season\n
+		Belgium First Division A 2022-23 - Completed season\n
+		Belgium First Division B 2022-23 - Completed season\n
+		Belgium First Division B 2023-24 - Last Updated 27/09/2023\n
+		Bolivia Primera Division 2023 - Last Updated 25/09/2023\n
+		Bosnia Premijer Liga 2022-23 - Completed season\n
+		Bosnia Premijer Liga 2023-24 - Last Updated 27/09/2023\n
+		Brazil Serie A 2022 - Completed season\n
+		Brazil Serie A 2023 - Last Updated 25/09/2023\n
+		Brazil Serie B 2022 - Completed season\n
+		Brazil Serie B 2023 - Last Updated 25/09/2023\n
+		Bulgaria First League 2022-23 - Completed season\n
+		Bulgaria First League 2023-24 - Last Updated 27/09/2023\n
+		Canada Premier League 2023 - Last Updated 27/09/2023\n
+		Chile Primera Division 2023 - Last Updated 27/09/2023\n
+		China Super League 2023 - Last Updated 27/09/2023\n
+		Colombia Primera A 2022 - Completed season\n
+		Colombia Primera A 2023 - Last Updated 27/09/2023\n
+		Costa Rica Primera Division 2022-23 - Completed season\n
+		Costa Rica Primera Division 2023-24 - Last Updated 27/09/2023\n
+		Croatia 1.HNL 2022-23 - Completed season\n
+		Cyprus First Division 2022-23 - Completed season\n
+		Cyprus First Division 2023-24 - Last Updated 27/09/2023\n
+		Czech Fortuna Liga 2022-23 - Completed season\n
+		Czech Fortuna Liga 2023-24 - Last Updated 27/09/2023\n
+		Denmark 1st Division 2022-23 - Completed season\n
+		Denmark 1st Division 2023-24 - Last Updated 27/09/2023\n
+		Denmark Superliga 2022-23 - Completed season\n
+		Ecuador Serie A 2022 - Completed season\n
+		Ecuador Serie A 2023 - Last Updated 27/09/2023\n
+		Egypt Premier League 2022-23 - Completed season\n
+		England Championship 2022-23 - Completed season\n
+		England Championship 2023-24 - Last Updated 27/09/2023\n
+		England League One 2022-23 - Completed season\n
+		England League Two 2022-23 - Completed season\n
+		England National League 2022-23 - Completed season\n
+		England National League North & South 2022-23 - Completed season\n
+		England National League North South 2022-23 - Last Updated 27/09/2023\n
+		England Premier League 2022-23 - Completed season\n
+		England Premier League 2023-24 - Last Updated 27/09/2023\n
+		Estonia Meistriliiga 2022 - Completed season\n
+		Estonia Meistriliiga 2023 - Last Updated 27/09/2023\n
+		Finland Veikkausliiga 2022 - Completed season\n
+		Finland Veikkausliiga 2023 - Last Updated 25/09/2023\n
+		Finland YkkoÃànen 2023 - Last Updated 27/09/2023\n
+		Finland Ykkönen 2023 - Last Updated 25/09/2023\n
+		France Ligue 1 2022-23 - Completed season\n
+		France Ligue 1 2023-24 - Last Updated 27/09/2023\n
+		France Ligue 2 2022-23 - Completed season\n
+		Georgia Erovnuli Liga 2022 - Completed season\n
+		Georgia Erovnuli Liga 2023 - Last Updated 27/09/2023\n
+		Germany 2. Bundesliga 2022-23 - Completed season\n
+		Germany 2. Bundesliga 2023-24 - Last Updated 27/09/2023\n
+		Germany Bundesliga 2022-23 - Completed season\n
+		Germany Bundesliga 2023-24 - Last Updated 27/09/2023\n
+		Greece Super League 2022-23 - Completed season\n
+		Greece Super League 2023-24 - Last Updated 27/09/2023\n
+		Hungary NB1 2022-23 - Completed season\n
+		Hungary NB1 2023-24 - Last Updated 27/09/2023\n
+		Indonesia Liga 1 2022-23 - Completed season\n
+		Indonesia Liga 1 2023-24 - Last Updated 27/09/2023\n
+		Ireland Premier Division 2022 - Completed season\n
+		Israel Ligat Ha'Al 2022-23 - Completed season\n
+		Italy Campionato Primavera 1 2022-23 - Completed season\n
+		Italy Serie A 2022-23 - Completed season\n
+		Italy Serie A 2023-24 - Last Updated 27/09/2023\n
+		Italy Serie B 2022-23 - Completed season\n
+		Italy Serie B 2023-24 - Last Updated 27/09/2023\n
+		Japan J1-League 2022 - Completed season\n
+		Japan J2-League 2022 - Completed season\n
+		Japan J2-League 2023 - Last Updated 25/09/2023\n
+		Korea K League 1 2022 - Completed season\n
+		Korea K League 2 2022 - Completed season\n
+		Korea K League 2 2023 - Last Updated 25/09/2023\n
+		Korea K-League 1 2022 - Last Updated 27/09/2023\n
+		Korea K-League 2 2022 - Last Updated 27/09/2023\n
+		Korea K-League 2 2023 - Last Updated 27/09/2023\n
+		Latvia Virsliga 2022 - Completed season\n
+		Latvia Virsliga 2023 - Last Updated 27/09/2023\n
+		Malaysia Super League 2023 - Last Updated 27/09/2023\n
+		Mexico Liga de Expansion 2022-23 - Completed season\n
+		Mexico Liga de Expansion 2023-24 - Last Updated 27/09/2023\n
+		Mexico Liga MX 2022-23 - Completed season\n
+		Mexico Liga MX 2023-24 - Last Updated 27/09/2023\n
+		Morocco Botola Pro 2022-23 - Completed season\n
+		Netherlands Eerste Divisie 2022-23 - Completed season\n
+		Netherlands Eerste Divisie 2023-24 - Last Updated 27/09/2023\n
+		Netherlands Eredivisie 2022-23 - Completed season\n
+		Netherlands Eredivisie 2023-24 - Last Updated 27/09/2023\n
+		Northern Ireland Premiership 2022-23 - Completed season\n
+		Northern Ireland Premiership 2023-24 - Last Updated 27/09/2023\n
+		Norway Eliteserien 2022 - Completed season\n
+		Norway First Division 2023 - Last Updated 25/09/2023\n
+		Paraguay Primera Division 2023 - Last Updated 27/09/2023\n
+		Peru Primera Division 2023 - Last Updated 27/09/2023\n
+		Poland 1 Liga 2022-23 - Completed season\n
+		Poland 1 Liga 2023-24 - Last Updated 27/09/2023\n
+		Poland Ekstraklasa 2022-23 - Completed season\n
+		Portugal Primeira Liga 2022-23 - Completed season\n
+		Portugal Primeira Liga 2023-24 - Last Updated 27/09/2023\n
+		Portugal Segunda Liga 2022-23 - Completed season\n
+		Portugal Segunda Liga 2023-24 - Last Updated 27/09/2023\n
+		Qatar Stars League 2022-23 - Last Updated 27/09/2023\n
+		Romania SuperLiga 2022-23 - Completed season\n
+		Romania SuperLiga 2023-24 - Last Updated 27/09/2023\n
+		Russia Premier League 2022-23 - Completed season\n
+		Russia Premier League 2023-24 - Last Updated 27/09/2023\n
+		Scotland Championship 2022-23 - Completed season\n
+		Scotland Championship 2023-24 - Last Updated 27/09/2023\n
+		Scotland League One 2022-23 - Completed season\n
+		Scotland League One 2023-24 - Last Updated 27/09/2023\n
+		Scotland League Two 2022-23 - Completed season\n
+		Scotland League Two 2023-24 - Last Updated 27/09/2023\n
+		Scotland Premiership 2022-23 - Last Updated 27/09/2023\n
+		Serbia Super Liga 2022-23 - Completed season\n
+		Slovakia Super Liga 2022-23 - Completed season\n
+		Slovenia Prva Liga 2022-23 - Completed season\n
+		Slovenia Prva Liga 2023-24 - Last Updated 27/09/2023\n
+		South Africa PSL 2022-23 - Completed season\n
+		Spain La Liga 2022-23 - Completed season\n
+		Spain La Liga 2023-24 - Last Updated 27/09/2023\n
+		Spain Primera Division RFEF 2022-23 - Last Updated 27/09/2023\n
+		Spain Primera División RFEF 2022-23 - Completed season\n
+		Spain Segunda 2022-23 - Completed season\n
+		Spain Segunda 2023-24 - Last Updated 27/09/2023\n
+		Sweden Allsvenskan 2022 - Completed season\n
+		Switzerland Super League 2022-23 - Completed season\n
+		Turkey Super Lig 2022-23 - Completed season\n
+		Turkey Super Lig 2023-24 - Last Updated 27/09/2023\n
+		Ukraine Premier League 2022-23 - Completed season\n
+		Ukraine Premier League 2023-24 - Last Updated 27/09/2023\n
+		Uruguay Primera Division 2022 - Completed season\n
+		Uruguay Primera Division 2023 - Last Updated 25/09/2023\n
+		USA MLS Next Pro 2022 - Completed season\n
+		USA MLS Next Pro 2023 - Last Updated 27/09/2023\n
+		USA USL Championship 2023 - Last Updated 25/09/2023\n
+		Uzbekistan Super League 2022 - Completed season\n
+		Uzbekistan Super League 2023 - Last Updated 31/07/2023\n
+		Venezuela Primera Division 2022 - Completed season\n
+
     ''')
