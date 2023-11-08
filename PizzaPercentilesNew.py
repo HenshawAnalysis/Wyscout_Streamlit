@@ -1212,7 +1212,6 @@ ax_image = add_image(
 disp2_col.pyplot(fig)
 #######################################################################################################################
 with st.expander('Latest Data Updates'):
-with st.expander('Latest Data Updates'):
     st.write('''
         Albania Superiore League 2022-23 - Completed season\n
         Albania Superiore League 2023-24 - Last Updated 08/11/2023\n
